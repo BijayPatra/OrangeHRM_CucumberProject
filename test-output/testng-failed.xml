@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM Test suite]">
+	<test thread-count="5" name="Employee Registration TestCase(failed)">
+		<classes>
+			<class name="testrunners.EmployeeRegTest">
+				<methods>
+					<include name="runScenario" invocation-numbers="0 1" />
+					<include name="tearDownClass" />
+					<include name="setUpClass" />
+				</methods>
+			</class> <!--
+			testrunners.EmployeeRegTest -->
+		</classes>
+	</test> <!--
+	Employee Registration TestCase(failed) -->
+</suite> <!--
+Failed suite [OrangeHRM Test suite] -->

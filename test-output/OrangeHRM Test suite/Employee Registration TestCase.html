@@ -1,0 +1,307 @@
+<html>
+<head>
+<title>TestNG:  Employee Registration TestCase</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Employee Registration TestCase</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 02 00:07:41 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5710 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunners.EmployeeRegTest.runScenario()'><b>runScenario</b><br>Test class: testrunners.EmployeeRegTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "New Employee Registration with VALID INPUTS", "NEW EMPLOYEE REGISTRATION"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MRBIJAYKUMAR&apos;, ip: &apos;192.168.1.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF799AE82B2+55298]
+	(No symbol) [0x00007FF799A55E02]
+	(No symbol) [0x00007FF7999105AB]
+	(No symbol) [0x00007FF799943E72]
+	(No symbol) [0x00007FF7999432FE]
+	(No symbol) [0x00007FF79993EC6C]
+	(No symbol) [0x00007FF79993B30E]
+	(No symbol) [0x00007FF79997A198]
+	(No symbol) [0x00007FF799979CB0]
+	(No symbol) [0x00007FF799971E83]
+	(No symbol) [0x00007FF79994670A]
+	(No symbol) [0x00007FF799947964]
+	GetHandleVerifier [0x00007FF799E60AAB+3694587]
+	GetHandleVerifier [0x00007FF799EB728E+4048862]
+	GetHandleVerifier [0x00007FF799EAF173+4015811]
+	GetHandleVerifier [0x00007FF799B847D6+695590]
+	(No symbol) [0x00007FF799A60CE8]
+	(No symbol) [0x00007FF799A5CF34]
+	(No symbol) [0x00007FF799A5D062]
+	(No symbol) [0x00007FF799A4D3A3]
+	BaseThreadInitThunk [0x00007FFFAEE1257D+29]
+	RtlUserThreadStart [0x00007FFFAFFCAF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepdefinations.OrangeHRM.i_open_browser_with_url(OrangeHRM.java:24)
+	at ✽.i open browser with url &quot;http://orangehrm.qedgetech.com&quot;(file:///C:/Users/DELL/eclipse-workspace/OrangeHRM_Cucumber/featurefiles/employee.feature:8)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace783218541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace783218541'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MRBIJAYKUMAR&apos;, ip: &apos;192.168.1.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF799AE82B2+55298]
+	(No symbol) [0x00007FF799A55E02]
+	(No symbol) [0x00007FF7999105AB]
+	(No symbol) [0x00007FF799943E72]
+	(No symbol) [0x00007FF7999432FE]
+	(No symbol) [0x00007FF79993EC6C]
+	(No symbol) [0x00007FF79993B30E]
+	(No symbol) [0x00007FF79997A198]
+	(No symbol) [0x00007FF799979CB0]
+	(No symbol) [0x00007FF799971E83]
+	(No symbol) [0x00007FF79994670A]
+	(No symbol) [0x00007FF799947964]
+	GetHandleVerifier [0x00007FF799E60AAB+3694587]
+	GetHandleVerifier [0x00007FF799EB728E+4048862]
+	GetHandleVerifier [0x00007FF799EAF173+4015811]
+	GetHandleVerifier [0x00007FF799B847D6+695590]
+	(No symbol) [0x00007FF799A60CE8]
+	(No symbol) [0x00007FF799A5CF34]
+	(No symbol) [0x00007FF799A5D062]
+	(No symbol) [0x00007FF799A4D3A3]
+	BaseThreadInitThunk [0x00007FFFAEE1257D+29]
+	RtlUserThreadStart [0x00007FFFAFFCAF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepdefinations.OrangeHRM.i_open_browser_with_url(OrangeHRM.java:24)
+	at ✽.i open browser with url &quot;http://orangehrm.qedgetech.com&quot;(file:///C:/Users/DELL/eclipse-workspace/OrangeHRM_Cucumber/featurefiles/employee.feature:8)
+</pre></div></td>
+<td>3</td>
+<td>testrunners.EmployeeRegTest@48974e45</td></tr>
+<tr>
+<td title='testrunners.EmployeeRegTest.runScenario()'><b>runScenario</b><br>Test class: testrunners.EmployeeRegTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "New Employee Registration with VALID INPUTS", "NEW EMPLOYEE REGISTRATION"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MRBIJAYKUMAR&apos;, ip: &apos;192.168.1.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF799AE82B2+55298]
+	(No symbol) [0x00007FF799A55E02]
+	(No symbol) [0x00007FF7999105AB]
+	(No symbol) [0x00007FF799943E72]
+	(No symbol) [0x00007FF7999432FE]
+	(No symbol) [0x00007FF79993EC6C]
+	(No symbol) [0x00007FF79993B30E]
+	(No symbol) [0x00007FF79997A198]
+	(No symbol) [0x00007FF799979CB0]
+	(No symbol) [0x00007FF799971E83]
+	(No symbol) [0x00007FF79994670A]
+	(No symbol) [0x00007FF799947964]
+	GetHandleVerifier [0x00007FF799E60AAB+3694587]
+	GetHandleVerifier [0x00007FF799EB728E+4048862]
+	GetHandleVerifier [0x00007FF799EAF173+4015811]
+	GetHandleVerifier [0x00007FF799B847D6+695590]
+	(No symbol) [0x00007FF799A60CE8]
+	(No symbol) [0x00007FF799A5CF34]
+	(No symbol) [0x00007FF799A5D062]
+	(No symbol) [0x00007FF799A4D3A3]
+	BaseThreadInitThunk [0x00007FFFAEE1257D+29]
+	RtlUserThreadStart [0x00007FFFAFFCAF28+40]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepdefinations.OrangeHRM.i_open_browser_with_url(OrangeHRM.java:24)
+	at ✽.i open browser with url &quot;http://orangehrm.qedgetech.com&quot;(file:///C:/Users/DELL/eclipse-workspace/OrangeHRM_Cucumber/featurefiles/employee.feature:8)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589931229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589931229'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 126.0.6478.127 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MRBIJAYKUMAR&apos;, ip: &apos;192.168.1.44&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF799AE82B2+55298]
+	(No symbol) [0x00007FF799A55E02]
+	(No symbol) [0x00007FF7999105AB]
+	(No symbol) [0x00007FF799943E72]
+	(No symbol) [0x00007FF7999432FE]
+	(No symbol) [0x00007FF79993EC6C]
+	(No symbol) [0x00007FF79993B30E]
+	(No symbol) [0x00007FF79997A198]
+	(No symbol) [0x00007FF799979CB0]
+	(No symbol) [0x00007FF799971E83]
+	(No symbol) [0x00007FF79994670A]
+	(No symbol) [0x00007FF799947964]
+	GetHandleVerifier [0x00007FF799E60AAB+3694587]
+	GetHandleVerifier [0x00007FF799EB728E+4048862]
+	GetHandleVerifier [0x00007FF799EAF173+4015811]
+	GetHandleVerifier [0x00007FF799B847D6+695590]
+	(No symbol) [0x00007FF799A60CE8]
+	(No symbol) [0x00007FF799A5CF34]
+	(No symbol) [0x00007FF799A5D062]
+	(No symbol) [0x00007FF799A4D3A3]
+	BaseThreadInitThunk [0x00007FFFAEE1257D+29]
+	RtlUserThreadStart [0x00007FFFAFFCAF28+40]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepdefinations.OrangeHRM.i_open_browser_with_url(OrangeHRM.java:24)
+	at ✽.i open browser with url &quot;http://orangehrm.qedgetech.com&quot;(file:///C:/Users/DELL/eclipse-workspace/OrangeHRM_Cucumber/featurefiles/employee.feature:8)
+</pre></div></td>
+<td>1</td>
+<td>testrunners.EmployeeRegTest@48974e45</td></tr>
+</table><p>
+</body>
+</html>
