@@ -2,26 +2,46 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-24T14:14:41Z" name="Default suite" finished-at="2024-09-24T14:15:12Z" duration-ms="30522">
+  <suite started-at="2024-11-24T15:39:30Z" name="OrangeHRM Test suite" finished-at="2024-11-24T15:39:54Z" duration-ms="24105">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.EmployeeRegTest@20c0a64d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.AdminLoginTest@32eff876]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.EmployeeRegTest@3a93b025]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-24T14:14:41Z" name="Default test" finished-at="2024-09-24T14:15:12Z" duration-ms="30522">
-      <class name="testrunners.EmployeeRegTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.EmployeeRegTest@20c0a64d]" started-at="2024-09-24T14:14:41Z" name="setUpClass" finished-at="2024-09-24T14:14:42Z" duration-ms="847" status="PASS">
+    <test started-at="2024-11-24T15:39:30Z" name="Admin Login TestCase" finished-at="2024-11-24T15:39:30Z" duration-ms="279">
+      <class name="testrunners.AdminLoginTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.AdminLoginTest@32eff876]" started-at="2024-11-24T15:39:30Z" name="setUpClass" finished-at="2024-11-24T15:39:30Z" duration-ms="253" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3762c4fc]]>
+                <![CDATA[org.testng.TestRunner@2b8bd798]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.EmployeeRegTest@20c0a64d]" started-at="2024-09-24T14:14:42Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-24T14:14:56Z" duration-ms="13545" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.AdminLoginTest@32eff876]" started-at="2024-11-24T15:39:30Z" name="tearDownClass" finished-at="2024-11-24T15:39:30Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunners.AdminLoginTest -->
+    </test> <!-- Admin Login TestCase -->
+    <test started-at="2024-11-24T15:39:30Z" name="Employee Registration TestCase" finished-at="2024-11-24T15:39:54Z" duration-ms="23753">
+      <class name="testrunners.EmployeeRegTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.EmployeeRegTest@3a93b025]" started-at="2024-11-24T15:39:30Z" name="setUpClass" finished-at="2024-11-24T15:39:30Z" duration-ms="514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c18621b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.EmployeeRegTest@3a93b025]" started-at="2024-11-24T15:39:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-24T15:39:44Z" duration-ms="13367" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.EmployeeRegTest@20c0a64d]" started-at="2024-09-24T14:14:56Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-09-24T14:15:12Z" duration-ms="15977" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.EmployeeRegTest@3a93b025]" started-at="2024-11-24T15:39:44Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-24T15:39:54Z" duration-ms="9789" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,11 +73,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.EmployeeRegTest@20c0a64d]" started-at="2024-09-24T14:15:12Z" name="tearDownClass" finished-at="2024-09-24T14:15:12Z" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.EmployeeRegTest@3a93b025]" started-at="2024-11-24T15:39:54Z" name="tearDownClass" finished-at="2024-11-24T15:39:54Z" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testrunners.EmployeeRegTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Employee Registration TestCase -->
+  </suite> <!-- OrangeHRM Test suite -->
 </testng-results>

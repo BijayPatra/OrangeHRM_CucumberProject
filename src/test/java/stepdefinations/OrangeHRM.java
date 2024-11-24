@@ -1,5 +1,6 @@
 package stepdefinations;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -20,11 +21,11 @@ public class OrangeHRM
 	@Given("i open browser with url {string}")
 	public void i_open_browser_with_url(String url) {
 
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(url);
 	}
 
