@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="66.024" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-08-20T15:45:31.807302100Z">
+<testcase classname="ADMIN LOGIN" name="Check Admin Login With VALID CREDENTIALS" time="15.336">
+<system-out><![CDATA[
+Given i open browser with url "http://orangehrm.qedgetech.com"..............passed
+Then i should see login page................................................passed
+When i enter user name as "Admin"...........................................passed
+And i enter password as "Qedge123!@#".......................................passed
+And i click login...........................................................passed
+Then i should see admin module..............................................passed
+When i click logout.........................................................passed
+Then i should see login page................................................passed
+When i close browser........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ADMIN LOGIN" name="Check Admin Login With INVALID CREDENTIALS - #1.1" time="9.343">
+<system-out><![CDATA[
+Given i open browser with url "http://orangehrm.qedgetech.com"..............passed
+Then i should see login page................................................passed
+When i enter user name as "Admin"...........................................passed
+And i enter password as "asdff".............................................passed
+And i click login...........................................................passed
+Then i should see errormessage..............................................passed
+When i close browser........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ADMIN LOGIN" name="Check Admin Login With INVALID CREDENTIALS - #1.2" time="9.395">
+<system-out><![CDATA[
+Given i open browser with url "http://orangehrm.qedgetech.com"..............passed
+Then i should see login page................................................passed
+When i enter user name as "xyq".............................................passed
+And i enter password as "Qedge123!@#".......................................passed
+And i click login...........................................................passed
+Then i should see errormessage..............................................passed
+When i close browser........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ADMIN LOGIN" name="Check Admin Login With INVALID CREDENTIALS - #1.3" time="8.187">
+<system-out><![CDATA[
+Given i open browser with url "http://orangehrm.qedgetech.com"..............passed
+Then i should see login page................................................passed
+When i enter user name as ""................................................passed
+And i enter password as "Qedge123!!@#"......................................passed
+And i click login...........................................................passed
+Then i should see errormessage..............................................passed
+When i close browser........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ADMIN LOGIN" name="Check Admin Login With INVALID CREDENTIALS - #1.4" time="7.673">
+<system-out><![CDATA[
+Given i open browser with url "http://orangehrm.qedgetech.com"..............passed
+Then i should see login page................................................passed
+When i enter user name as "XYZ".............................................passed
+And i enter password as ""..................................................passed
+And i click login...........................................................passed
+Then i should see errormessage..............................................passed
+When i close browser........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ADMIN LOGIN" name="Check Admin Login With INVALID CREDENTIALS - #1.5" time="7.732">
+<system-out><![CDATA[
+Given i open browser with url "http://orangehrm.qedgetech.com"..............passed
+Then i should see login page................................................passed
+When i enter user name as ""................................................passed
+And i enter password as ""..................................................passed
+And i click login...........................................................passed
+Then i should see errormessage..............................................passed
+When i close browser........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="ADMIN LOGIN" name="Check Admin Login With INVALID CREDENTIALS - #1.6" time="7.781">
+<system-out><![CDATA[
+Given i open browser with url "http://orangehrm.qedgetech.com"..............passed
+Then i should see login page................................................passed
+When i enter user name as "Admin"...........................................passed
+And i enter password as ""..................................................passed
+And i click login...........................................................passed
+Then i should see errormessage..............................................passed
+When i close browser........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

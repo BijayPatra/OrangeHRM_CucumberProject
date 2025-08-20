@@ -11,7 +11,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(features ={"featurefiles/adminlogin.feature"},
 					glue = "stepdefinations",
 					dryRun=false,
-					plugin = {"pretty","html:testreports/loginresult.html"})
+					monochrome = true,
+					plugin = {"pretty","html:testreports/loginresult.html",
+							  "json:testreports/loginresult.json",
+							  "junit:testreports/loginresult.xml"})
 
 //Its also called as Runner Class
 public class AdminLoginTest extends AbstractTestNGCucumberTests
